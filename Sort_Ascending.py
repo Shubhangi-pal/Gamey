@@ -3,11 +3,11 @@
 from array import *
 
 a = array('i', [])
-
-for i in range(8):
+length = int(input("Enter how many numbers you want to sort:"))
+for i in range(length):
     a.append(int(input("Enter a number")))
 
-print(a)
+print("The list of numbers you have entered : ", a)
 count = 0
 while count < len(a) -1:
     t = 0
@@ -21,7 +21,7 @@ while count < len(a) -1:
         t +=1
     count += 1
 
-print(a)
+print("Your list sorted in ascending order : ", a)
 
 
 
